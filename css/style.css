@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700i&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* jumbotron */
+.jumbotron {
+  background-image: url(https://images.unsplash.com/photo-1530374580925-9d8051b37313?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding-top: 42vh;
+  position: relative;
+}
+
+.jumbotron .logo-circle {
+  border: 3px solid white;
+  position: absolute;
+  top: 60px;
+  left: 320px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.jumbotron .logo-circle .small-circle {
+  border: 3px solid white;
+  position: absolute;
+  margin: 7px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.jumbotron .logo-circle p {
+  margin-left: 50px;
+  margin-top: 2px;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+
+.jumbotron .text-rotated > p {
+  color: white;
+  letter-spacing: 3px;
+  width: 250px;
+  height: 30px;
+  transform: rotate(270deg);
+  padding-left: 25px;
+  margin-left: -100px;
+  margin-top: 50px;
+}
+
+.jumbotron .desc {
+  text-shadow: 2px 2px 5px #575757;
+  color: #ffff;
+  transform: translate(51%, 5%);
+  font-size: 28px;
+  text-transform: capitalize;
+  z-index: 99;
+  font-weight: 800;
+  width: 650px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+}
+
+.jumbotron .desc p {
+  font-size: 16px;
+}
+
+/* section content */
+.content {
+  margin: 0 auto;
+  border: 1px solid red;
+  width: 65%;
+  height: auto;
+  padding-top: 70px;
+}
+
+.content h2 {
+  font-size: 22px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.content p {
+  font-size: 16px;
+  color: grey;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=style.css.map */
