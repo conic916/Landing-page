@@ -450,20 +450,27 @@ i {
 
 /* shopping */
 .shopping {
-    max-width: calc(100% - 40%);
+    width: 100%;
     // border: 1px solid rgb(228, 132, 132);
-    height: 800px;
+    height: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    background: rgb(238, 235, 235);
+
+    .buy {
+        width: calc(100% - 40%);
+        margin: 0 auto;
+        display: flex;
+    }
 
     .legacy {
         // border: 1px solid red;
-        width: 560px;
+        width: 500px;
         height: 500px;
         flex-direction: column;
 
-        h2 {
+        h4 {
             color: rgb(29, 28, 28);
             font-size: 18px;
             letter-spacing: 1px;
@@ -474,11 +481,12 @@ i {
             color: rgb(172, 172, 172);
             font-size: 14px;
             word-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         .first-container {
             // box-shadow: 1px 1px 1px 1px black;
-            width: 450px;
+            width: 350px;
             height: 350px;
             transform: translate(10%, 20%);
             padding-top: 70px;
@@ -493,9 +501,11 @@ i {
             font-size: 14px;
             color: white;
             background: rgb(207, 203, 203);
+            text-transform: uppercase;
 
             p {
                 padding-top: 2px;
+                font-size: 12px;
             }
         }
 
@@ -506,14 +516,57 @@ i {
             background-color: rgb(138, 189, 138);
             border-radius: 3%;
             color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
         }
     }
 
     .most-popular {
-        border: 1px solid rgb(20, 20, 20);
-        width: 560px;
-        height: 500px;
-        background: rgb(10, 10, 10);
-        flex-direction: column;
+        box-shadow: 1px 1px 15px 15px rgb(224, 223, 223);
+        transform: translate(510px, -297px);
+        border-radius: 1%;
+        background: white;
+        width: 500px;
+        height: 400px;
+
+        .second-container {
+            // box-shadow: 1px 1px 1px 1px black;
+            width: 350px;
+            height: 300px;
+            transform: translate(10%, -25%);
+            padding-top: 125px;
+        }
+
+        .second-object {
+            width: 80px;
+            height: 20px;
+            border-radius: 8%;
+            text-align: center;
+            margin-top: 1px;
+            font-size: 14px;
+            color: white;
+            background: rgb(207, 203, 203);
+      
+            p {
+                padding-top: 2px;
+                text-transform: uppercase;
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .button {
+            background: rgb(150, 84, 150);
+            border: 1px solid rgb(150, 84, 150);
+        }
+
     }
+}
+
+/* class footer */
+
+.footer {
+    width: 100%;
+    height: 600px;
+    background-color: #1F2928;
 }

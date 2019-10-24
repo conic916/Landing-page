@@ -444,23 +444,31 @@ i {
 
 /* shopping */
 .shopping {
-  max-width: calc(100% - 40%);
-  height: 800px;
+  width: 100%;
+  height: 600px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
+  background: #eeebeb;
+}
+
+.shopping .buy {
+  width: calc(100% - 40%);
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .shopping .legacy {
-  width: 560px;
+  width: 500px;
   height: 500px;
   -ms-flex-direction: column;
       flex-direction: column;
 }
 
-.shopping .legacy h2 {
+.shopping .legacy h4 {
   color: #1d1c1c;
   font-size: 18px;
   letter-spacing: 1px;
@@ -471,10 +479,11 @@ i {
   color: #acacac;
   font-size: 14px;
   word-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .shopping .legacy .first-container {
-  width: 450px;
+  width: 350px;
   height: 350px;
   transform: translate(10%, 20%);
   padding-top: 70px;
@@ -489,10 +498,12 @@ i {
   font-size: 14px;
   color: white;
   background: #cfcbcb;
+  text-transform: uppercase;
 }
 
 .shopping .legacy .first-object p {
   padding-top: 2px;
+  font-size: 12px;
 }
 
 .shopping .legacy button {
@@ -502,14 +513,53 @@ i {
   background-color: #8abd8a;
   border-radius: 3%;
   color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .shopping .most-popular {
-  border: 1px solid #141414;
-  width: 560px;
-  height: 500px;
-  background: #0a0a0a;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  box-shadow: 1px 1px 15px 15px #e0dfdf;
+  transform: translate(510px, -297px);
+  border-radius: 1%;
+  background: white;
+  width: 500px;
+  height: 400px;
+}
+
+.shopping .most-popular .second-container {
+  width: 350px;
+  height: 300px;
+  transform: translate(10%, -25%);
+  padding-top: 125px;
+}
+
+.shopping .most-popular .second-object {
+  width: 80px;
+  height: 20px;
+  border-radius: 8%;
+  text-align: center;
+  margin-top: 1px;
+  font-size: 14px;
+  color: white;
+  background: #cfcbcb;
+}
+
+.shopping .most-popular .second-object p {
+  padding-top: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.shopping .most-popular .button {
+  background: #965496;
+  border: 1px solid #965496;
+}
+
+/* class footer */
+.footer {
+  width: 100%;
+  height: 600px;
+  background-color: #1F2928;
 }
 /*# sourceMappingURL=style.css.map */
