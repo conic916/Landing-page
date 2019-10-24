@@ -71,7 +71,7 @@ body {
 
 /* jumbotron */
 .jumbotron {
-  background-image: url(https://images.unsplash.com/photo-1530374580925-9d8051b37313?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+  background-image: url(https://images.unsplash.com/photo-1470259078422-826894b933aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80);
   width: 100%;
   height: 90vh;
   background-size: cover;
@@ -109,7 +109,7 @@ body {
   margin-top: 2px;
   color: white;
   font-size: 22px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .jumbotron .text-rotated > p {
@@ -121,10 +121,11 @@ body {
   padding-left: 25px;
   margin-left: -100px;
   margin-top: 50px;
+  text-shadow: 4px 4px 5px #070707;
 }
 
 .jumbotron .desc {
-  text-shadow: 2px 2px 5px #575757;
+  text-shadow: 3px 3px 5px black;
   color: #ffff;
   transform: translate(51%, 5%);
   font-size: 28px;
@@ -137,7 +138,9 @@ body {
 }
 
 .jumbotron .desc p {
-  font-size: 14px;
+  text-shadow: 4px 4px 5px #070707;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
 /* section content */
@@ -170,10 +173,9 @@ body {
 
 /* gallery */
 .gallery {
-  text-align: center;
   float: right;
-  width: 83%;
-  height: 700px;
+  width: 82.5%;
+  height: 600px;
   margin: 0 auto;
   box-shadow: 1px 1px 1px 1px none;
   overflow: hidden;
@@ -210,12 +212,14 @@ body {
 
 .container-gallery {
   color: #fff;
-  background: #F5989D;
+  background: #df979a;
+  opacity: 1;
 }
 
 .gallery-content {
   color: #fff;
   background: #615F7D;
+  opacity: 1;
   transform: translate(25%);
 }
 
@@ -226,7 +230,7 @@ body {
 .image img {
   width: 600px;
   height: 250px;
-  transform: translate(55%, 7%);
+  transform: translate(56%, 7.3%);
   filter: brightness(50%);
 }
 
@@ -259,11 +263,10 @@ body {
 }
 
 .second-image img {
-  width: 546px;
+  width: 550px;
   height: 250px;
   filter: brightness(50%);
-  margin-top: -10px;
-  margin-left: -53px;
+  transform: translate(-0.1%, -4%);
 }
 
 .second-image h3 {
@@ -291,7 +294,7 @@ body {
   width: 300px;
   height: 250px;
   transform: translate(19px, -28px);
-  background-color: #9fc972;
+  background-color: #738560;
   color: white;
   text-align: justify;
   letter-spacing: 1px;
@@ -302,7 +305,7 @@ body {
 }
 
 .small-box-second {
-  width: 277px;
+  width: 279px;
   height: 250px;
   margin-top: -301px;
   margin-left: 314px;
@@ -316,8 +319,8 @@ body {
   width: 500px;
   height: 250px;
   margin-top: -301px;
-  margin-left: 492px;
-  background-color: #d487bd;
+  margin-left: 497px;
+  background-color: #916483;
   color: white;
   text-align: justify;
   letter-spacing: 1px;
@@ -328,5 +331,185 @@ body {
   text-align: justify;
   font-weight: bold;
   text-transform: capitalize;
+}
+
+/* icons */
+i {
+  padding-left: 15px;
+}
+
+/* section details title */
+.description {
+  width: 65%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 55px;
+}
+
+.description .title-important {
+  transform: translate(5px, 0);
+  text-align: justify;
+  text-transform: capitalize;
+  color: #222626;
+  font-size: 22px;
+}
+
+.description .title > p {
+  font-size: 14px;
+  text-align: justify;
+  padding-right: 60px;
+  color: #b9b5b5;
+  text-transform: capitalize;
+}
+
+.description .desc > p {
+  font-size: 14px;
+  text-align: justify;
+  padding-right: 80px;
+  color: #b9b5b5;
+  text-transform: capitalize;
+}
+
+.second-jumbotron {
+  background-image: url(https://images.unsplash.com/photo-1542148649-193ca0f7d6b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding-top: 42vh;
+  position: relative;
+}
+
+.second-jumbotron h2,
+.second-jumbotron h3 {
+  text-shadow: 4px 4px 5px #575757;
+  color: #ffff;
+  transform: translate(62%, 5%);
+  font-size: 28px;
+  text-transform: capitalize;
+  z-index: 99;
+  font-weight: 800;
+  width: 550px;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+.second-jumbotron p {
+  color: #ffff;
+  transform: translate(68%, 5%);
+  text-transform: capitalize;
+  z-index: 99;
+  font-weight: 600;
+  width: 500px;
+  text-shadow: 4px 4px 5px #5e5e5e;
+  font-size: 16px;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+}
+
+.second-jumbotron .info {
+  padding-top: 25px;
+}
+
+.second-jumbotron i {
+  padding-left: 30px;
+}
+
+/* second-description */
+.second-description {
+  padding-top: 50px;
+  background-color: #689c68;
+  width: 100%;
+}
+
+.second-description .second-title {
+  padding-top: 50px;
+  color: #fff;
+  width: calc(100% - 35%);
+  margin: 0 auto;
+}
+
+.second-description .second-title p {
+  color: white;
+}
+
+.second-description .descrip {
+  font-size: 14px;
+  text-align: justify;
+  padding-right: 80px;
+  text-transform: capitalize;
+  color: white;
+}
+
+/* shopping */
+.shopping {
+  max-width: calc(100% - 40%);
+  height: 800px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.shopping .legacy {
+  width: 560px;
+  height: 500px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.shopping .legacy h2 {
+  color: #1d1c1c;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.shopping .legacy:last-child {
+  color: #acacac;
+  font-size: 14px;
+  word-spacing: 2px;
+}
+
+.shopping .legacy .first-container {
+  width: 450px;
+  height: 350px;
+  transform: translate(10%, 20%);
+  padding-top: 70px;
+}
+
+.shopping .legacy .first-object {
+  width: 80px;
+  height: 20px;
+  border-radius: 8%;
+  text-align: center;
+  margin-top: 1px;
+  font-size: 14px;
+  color: white;
+  background: #cfcbcb;
+}
+
+.shopping .legacy .first-object p {
+  padding-top: 2px;
+}
+
+.shopping .legacy button {
+  border: 1px solid #8abd8a;
+  width: 130px;
+  height: 45px;
+  background-color: #8abd8a;
+  border-radius: 3%;
+  color: #fff;
+}
+
+.shopping .most-popular {
+  border: 1px solid #141414;
+  width: 560px;
+  height: 500px;
+  background: #0a0a0a;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
