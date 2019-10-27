@@ -1,0 +1,29 @@
+
+/* section content */
+
+.content {
+    margin: 0 auto;
+    width: 65%;
+    height: auto;
+    padding-top: 70px;
+
+    h2 {
+        font-size: 22px;
+        color: #222626;
+        text-transform: uppercase;
+    }
+
+    p {
+        padding-top: 20px;
+        font-size: 14px;
+        color: rgb(185, 181, 181);
+        letter-spacing: 2px;
+        width: 90%;
+    }
+
+    .second-content {
+        padding-left: 15px;
+        padding-top: 55px;
+        width: 50%;
+    }
+}

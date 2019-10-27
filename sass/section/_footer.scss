@@ -1,0 +1,88 @@
+/* class footer */
+.footer {
+    background-color: #1F2928;
+
+}
+
+.contact {
+    width: calc(100% - 35%);
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 120px;
+    color: rgb(255, 255, 255);
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+
+.second-content {
+    padding-left: 70px;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    border: 1px solid red;
+
+    h3 {
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
+
+    p {
+        padding-top: 15px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+}
+
+.list-footer {
+    max-width: 50%;
+    text-transform: capitalize;
+    text-align: justify;
+    margin-right: 90px;
+
+    /* box label */
+
+    .box {
+        padding-top: 15px;
+        position: relative;
+
+        span {
+            border: 2px solid rgb(173, 214, 145);
+            width: 50px;
+            height: 40px;
+            padding-top: -5px;
+            margin-left: -4px;
+            background: rgb(160, 218, 160);
+            position: absolute;
+        }
+
+        .fas {
+            font-size: 18px;
+            padding-top: 7px;
+        }
+    }
+
+    input {
+        text-align: center;
+        width: 350px;
+        height: 40px;
+    }
+
+    /* content */
+    p {
+        font-size: 16px;
+    }
+
+    ul {
+
+        list-style-type: none;
+        padding-top: 5px;
+    }
+
+    li {
+        list-style-type: none;
+        padding-right: 45px;
+        padding-top: 5px;
+        font-size: 14px;
+    }
+}
+

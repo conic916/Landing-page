@@ -1,0 +1,26 @@
+
+/* second-description */
+.second-description {
+    padding-top: 50px;
+    background-color: rgb(104, 156, 104);
+    width: 100%;
+
+    .second-title {
+        padding-top: 50px;
+        color: #fff;
+        width: calc(100% - 35%);
+        margin: 0 auto;
+
+        p {
+            color: white;
+        }
+    }
+
+    .descrip {
+        font-size: 14px;
+        text-align: justify;
+        padding-right: 80px;
+        text-transform: capitalize;
+        color: white;
+    }
+}

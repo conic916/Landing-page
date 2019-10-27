@@ -1,0 +1,33 @@
+
+/* section details title */
+
+.description {
+    width: 65%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 55px;
+
+    .title-important {
+        transform: translate(5px, 0);
+        text-align: justify;
+        text-transform: capitalize;
+        color: #222626;
+        font-size: 22px;
+    }
+
+    .title>p {
+        font-size: 14px;
+        text-align: justify;
+        padding-right: 60px;
+        color: rgb(185, 181, 181);
+        text-transform: capitalize;
+    }
+
+    .desc>p {
+        font-size: 14px;
+        text-align: justify;
+        padding-right: 80px;
+        color: rgb(185, 181, 181);
+        text-transform: capitalize;
+    }
+}
