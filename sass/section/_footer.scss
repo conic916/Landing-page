@@ -1,46 +1,46 @@
 /* class footer */
 .footer {
     background-color: #1F2928;
-
 }
 
 .contact {
     width: calc(100% - 35%);
     height: 600px;
     margin: 0 auto;
-    padding-top: 120px;
+    padding-top: 50px;
     color: rgb(255, 255, 255);
-    display: -webkit-inline-flex;
-    display: inline-flex;
+    // border: 1px solid rgb(219, 217, 217);
 }
 
-.second-content {
-    padding-left: 70px;
-    display: -webkit-inline-flex;
-    display: inline-flex;
-    border: 1px solid red;
+.first-container {
+    display: inline;
+    width: 40%;
+    height: 250px;
+    text-align: justify;
 
     h3 {
-        font-size: 16px;
-        letter-spacing: 2px;
+        padding-top: 3px;
+        font-size: 18px;
+        letter-spacing: 1px;
         text-transform: capitalize;
+        text-align: justify;
     }
 
     p {
         padding-top: 15px;
+        padding-right: 65px;
         letter-spacing: 1px;
         font-size: 14px;
     }
 }
 
-.list-footer {
-    max-width: 50%;
-    text-transform: capitalize;
-    text-align: justify;
-    margin-right: 90px;
+.second-container {
+    display: inline;
+    height: 250px;
+    margin-right: 15px;
+    width: 50%;
 
     /* box label */
-
     .box {
         padding-top: 15px;
         position: relative;
@@ -59,30 +59,160 @@
             font-size: 18px;
             padding-top: 7px;
         }
-    }
 
-    input {
-        text-align: center;
-        width: 350px;
-        height: 40px;
+        input {
+            text-align: center;
+            width: 250px;
+            height: 40px;
+        }
     }
+}
 
-    /* content */
+/* content */
+.list-footer {
+    text-transform: capitalize;
+    text-align: center;
+    margin-right: 60px;
+
     p {
         font-size: 16px;
     }
 
     ul {
-
         list-style-type: none;
-        padding-top: 5px;
+        padding-top: 8px;
     }
 
     li {
         list-style-type: none;
         padding-right: 45px;
-        padding-top: 5px;
+        padding-top: 10px;
         font-size: 14px;
     }
 }
 
+@media(min-width: 992px) and (max-width: 1199px) {
+
+
+    .second-container {
+        display: block;
+        width: 100%;
+
+        input {
+            margin-left: -30px;
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .contact {
+        width: 60%;
+        height: auto;
+        border: none;
+        text-align: center;
+    }
+
+    .first-container {
+        // display: block;
+        width: 50%;
+        text-align: center;
+
+        h3 {
+            text-align: justify;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    .second-container {
+        // display: block;
+        width: 50%;
+        margin-left: 120px;
+        margin-top: 70px;
+
+        span {
+            top: 15px;
+            left: 210px;
+        }
+
+        .box {
+            margin-top: 13px;
+        }
+
+        h3 {
+            margin-top: -1px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .contact {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .first-container {
+        width: 100%;
+        display: block;
+        text-align: justify;
+        padding-left: 20px;
+
+        h3,
+        p {
+            width: 300px;
+            letter-spacing: 0;
+        }
+    }
+
+    .second-container {
+        display: block;
+        width: 100%;
+        margin-bottom: -70px;
+        text-align: justify;
+
+        input {
+            margin-left: 20px;
+        }
+
+        span {
+            top: 15px;
+            left: 230px;
+        }
+
+        .box {
+            margin-top: 13px;
+        }
+
+        h3 {
+            margin-top: -10px;
+            text-transform: capitalize;
+            margin-left: 20px;
+        }
+    }
+    .list-footer {
+        text-align: center;
+        padding-top: -100px;
+        width: 80%;    
+        p {
+            font-size: 14px;
+            text-align: justify;
+            margin-left: 10px;
+        }
+        ul {
+            width: 100%;
+            margin-left: -15px;
+            padding-top: 5px;
+        }
+        li {
+            list-style-type: none;
+            text-align: justify;
+        }
+    }
+}
