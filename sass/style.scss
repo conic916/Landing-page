@@ -79,30 +79,30 @@ body {
     width: 100%;
 }
 
-
-
-
 /* shopping */
 .shopping {
     width: 100%;
-    // border: 1px solid rgb(228, 132, 132);
     height: 600px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
     background: rgb(238, 235, 235);
 
     .buy {
         width: calc(100% - 40%);
         margin: 0 auto;
         display: flex;
+        // border: 1px solid rgb(228, 132, 132);
     }
 
     .legacy {
-        // border: 1px solid red;
-        width: 500px;
-        height: 500px;
-        flex-direction: column;
+        // border: 1px solid rgb(0, 0, 0);
+        box-shadow: 1px 1px 15px 15px rgb(224, 223, 223);
+        border-radius: 1%;
+        background: white;
+        width: 350px;
+        height: 480px;
+        margin-top: 40px;
+        margin-left: 100px;
 
         h4 {
             color: rgb(29, 28, 28);
@@ -111,19 +111,18 @@ body {
             text-transform: capitalize;
         }
 
-        &:last-child {
-            color: rgb(172, 172, 172);
+        p {
+            padding-top: 15px;
+            text-transform: underline;
             font-size: 14px;
-            word-spacing: 2px;
+            text-align: justify;
             letter-spacing: 1px;
         }
 
-        .first-container {
-            // box-shadow: 1px 1px 1px 1px black;
-            width: 350px;
-            height: 350px;
-            transform: translate(10%, 20%);
-            padding-top: 70px;
+        &:last-child {
+            color: rgb(172, 172, 172);
+            font-size: 14px;
+            word-spacing: 1px;
         }
 
         .first-object {
@@ -136,10 +135,12 @@ body {
             color: white;
             background: rgb(207, 203, 203);
             text-transform: uppercase;
+            padding-left: 7px;
 
             p {
-                padding-top: 2px;
-                font-size: 12px;
+                padding-top: 3px;
+                font-size: 14px;
+                text-transform: underline;
             }
         }
 
@@ -152,6 +153,7 @@ body {
             color: #fff;
             text-transform: uppercase;
             font-size: 12px;
+            text-align: center;
             cursor: pointer;
 
             &:hover {
@@ -161,19 +163,27 @@ body {
     }
 
     .most-popular {
-        box-shadow: 1px 1px 15px 15px rgb(224, 223, 223);
-        transform: translate(530px, -331px);
+        // box-shadow: 1px 1px 15px 15px rgb(224, 223, 223);
         border-radius: 1%;
         background: white;
-        width: 500px;
-        height: 400px;
+        width: 350px;
+        height: 480px;
+        margin-top: 40px;
+        margin-left: 250px;
 
-        .second-container {
-            // box-shadow: 1px 1px 1px 1px black;
-            width: 350px;
-            height: 300px;
-            transform: translate(10%, -25%);
-            padding-top: 125px;
+        h4 {
+            color: rgb(29, 28, 28);
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+
+        p {
+            padding-top: 15px;
+            text-transform: underline;
+            font-size: 14px;
+            text-align: justify;
+            letter-spacing: 1px;
         }
 
         .second-object {
@@ -181,35 +191,44 @@ body {
             height: 20px;
             border-radius: 8%;
             text-align: center;
-            margin-top: 1px;
             font-size: 14px;
             color: white;
             background: rgb(207, 203, 203);
+            text-transform: uppercase;
 
             p {
-                padding-top: 2px;
-                text-transform: uppercase;
-                font-size: 12px;
-                letter-spacing: 1px;
+                padding-top: 5px;
             }
         }
 
-        .button {
-            background: rgb(150, 84, 150);
-            border: 1px solid rgb(150, 84, 150);
-            cursor: pointer;
+    }
 
-            &:hover {
-                background: rgb(221, 170, 76);
-            }
+    .button {
+        width: 130px;
+        height: 45px;
+        background: rgb(150, 84, 150);
+        border: 1px solid rgb(150, 84, 150);
+        cursor: pointer;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: center;
+
+        &:hover {
+            background: rgb(221, 170, 76);
+        }
+    }
+
+    .icons {
+        padding-top: 15px;
+
+        i {
+            font-size: 22px;
         }
     }
 }
 
-.icons {
-    padding-top: 15px;
+// media queries :
 
-    i {
-        font-size: 22px;
-    }
+@media(max-width: 767px) {
 }
