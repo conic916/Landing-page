@@ -14,10 +14,10 @@
 
     p {
         padding-top: 20px;
-        font-size: 14px;
+        font-size: 18px;
         color: rgb(185, 181, 181);
         letter-spacing: 2px;
-        width: 90%;
+        
     }
 
     .second-content {
@@ -48,10 +48,10 @@
 
 @media(max-width: 767px) {
     .content {
-        width: 900px;
-        margin-right: 10px;
+        width: 650px;
         text-align: justify;
         display: block;
+
         p {
             font-size: 16px;
         }
