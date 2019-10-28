@@ -73,32 +73,126 @@
   letter-spacing: 2px;
 }
 
-/* section content */
-.content {
-  margin: 0 auto;
-  width: 65%;
-  height: auto;
-  padding-top: 70px;
+/*galeria*/
+.gallery {
+  background: #ffd5d5;
 }
 
-.content h2 {
-  font-size: 22px;
-  color: #222626;
-  text-transform: uppercase;
+.gallery-img {
+  height: 30vh;
+  max-width: 100%;
+  position: relative;
 }
 
-.content p {
-  padding-top: 20px;
-  font-size: 14px;
-  color: #b9b5b5;
-  letter-spacing: 2px;
-  width: 90%;
+.gallery-img:after {
+  position: absolute;
+  z-index: -1;
+  background-position: center center;
+  background-size: cover;
+  content: " ";
 }
 
-.content .second-content {
-  padding-left: 15px;
-  padding-top: 55px;
-  width: 50%;
+.img {
+  display: none;
+}
+
+.gallery-img1 {
+  background: url(https://cdn.stocksnap.io/img-thumbs/960w/TDKMGGABFR.jpg) no-repeat 0/cover;
+}
+
+.gallery-img2 {
+  background: url(https://cdn.stocksnap.io/img-thumbs/960w/K00RNBNJGC.jpg) no-repeat 0/cover;
+}
+
+.gallery-img3 {
+  background: url(https://cdn.stocksnap.io/img-thumbs/960w/EE2H5SKEPA.jpg) no-repeat 0/cover;
+}
+
+.gallery-img4 {
+  background: url(https://cdn.stocksnap.io/img-thumbs/960w/EXKVSL1OHJ.jpg) no-repeat 0/cover;
+}
+
+.gallery-img5 {
+  background: url(https://cdn.stocksnap.io/img-thumbs/960w/G40JKFC5I5.jpg) no-repeat 0/cover;
+}
+
+.gallery-img7 {
+  background: url(https://cdn.stocksnap.io/img-thumbs/960w/DEFVENVICA.jpg) no-repeat 0/cover;
+}
+
+.gallery-img6 {
+  background: url(https://cdn.stocksnap.io/img-thumbs/960w/LJAJDRFNWV.jpg) no-repeat 0/cover;
+}
+
+.gallery-img8 {
+  background: url(https://cdn.stocksnap.io/img-thumbs/960w/5A5JLDXM4R.jpg) no-repeat 0/cover;
+}
+
+.gallery-img9 {
+  background: url(https://cdn.stocksnap.io/img-thumbs/960w/2HBERGYT3G.jpg) no-repeat 0/cover;
+}
+
+.gallery-img10 {
+  background: url(https://cdn.stocksnap.io/img-thumbs/960w/JVZSMMHS8J.jpg) no-repeat 0/cover;
+}
+
+section.gallery .layer {
+  display: none;
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+
+section.gallery .gallery-img:hover .layer {
+  display: block;
+  background: rgba(68, 65, 65, 0.68);
+  margin-top: -18px;
+}
+
+section.gallery .gallery-img:hover .layer h3 {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+section.gallery .gallery-img:hover .layer p {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+section.gallery .layer i {
+  padding-left: 20px;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .gallery-img {
+    height: 30vh;
+    width: 100%;
+  }
+  section.gallery .gallery-img:hover .layer {
+    margin-top: -16px;
+  }
+  section.gallery .gallery-img:hover .layer h3 {
+    color: white;
+    font-size: 16px;
+  }
+  section.gallery .gallery-img:hover .layer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    display: none;
+  }
+  section.gallery .gallery-img:hover .layer {
+    display: none;
+  }
 }
 
 /* section details title */
