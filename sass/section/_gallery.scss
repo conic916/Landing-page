@@ -1,172 +1,128 @@
-
-/* gallery */
+/*galeria*/
 .gallery {
-
-    float: right;
-    width: 82.5%;
-    height: 600px;
-    margin: 0 auto;
-    box-shadow: 1px 1px 1px 1px none;
-    overflow: hidden;
-
-    h3 {
-        text-align: justify;
-        padding-left: 30px;
-        padding-top: 35px;
-        font-size: 18px;
-        letter-spacing: 2px;
-        text-transform: capitalize;
-    }
-
-    p {
-        text-align: justify;
-
-        padding-left: 30px;
-        padding-right: 100px;
-        font-size: 16px;
-        letter-spacing: 1px;
-    }
-
-    .more-info {
-        padding-top: 40px;
-        text-transform: capitalize;
-        font-weight: bold;
-    }
-
-    .box {
-        width: 600px;
-        height: 250px;
-    }
+    background: rgb(255, 213, 213);
 }
 
-.container-gallery {
-    color: #fff;
-    background: rgb(223, 151, 154);
-    opacity: 1;
-}
-
-.gallery-content {
-    color: #fff;
-    background: #615F7D;
-    opacity: 1;
-    transform: translate(25%);
-}
-
-.image {
+.gallery-img {
+    height: 30vh;
+    max-width: 100%;
     position: relative;
 
-    img {
-        width: 600px;
-        height: 250px;
-        transform: translate(56%, -6%);
-        filter: brightness(50%);
+    &:after {
+        position: absolute;
+        z-index: -1;
+        background-position: center center;
+        background-size: cover;
+        content: " ";
     }
+}
+
+.img {
+    display: none;
+}
+
+.gallery-img1 {
+    background: url(https://cdn.stocksnap.io/img-thumbs/960w/TDKMGGABFR.jpg) no-repeat 0/cover;
+}
+
+.gallery-img2 {
+    background: url(https://cdn.stocksnap.io/img-thumbs/960w/K00RNBNJGC.jpg) no-repeat 0/cover;
+}
+
+.gallery-img3 {
+    background: url(https://cdn.stocksnap.io/img-thumbs/960w/EE2H5SKEPA.jpg) no-repeat 0/cover;
+}
+
+.gallery-img4 {
+    background: url(https://cdn.stocksnap.io/img-thumbs/960w/EXKVSL1OHJ.jpg) no-repeat 0/cover;
+}
+
+.gallery-img5 {
+    background: url(https://cdn.stocksnap.io/img-thumbs/960w/G40JKFC5I5.jpg) no-repeat 0/cover;
+}
+
+.gallery-img7 {
+    background: url(https://cdn.stocksnap.io/img-thumbs/960w/DEFVENVICA.jpg) no-repeat 0/cover;
+}
+
+.gallery-img6 {
+    background: url(https://cdn.stocksnap.io/img-thumbs/960w/LJAJDRFNWV.jpg) no-repeat 0/cover;
+}
+
+.gallery-img8 {
+    background: url(https://cdn.stocksnap.io/img-thumbs/960w/5A5JLDXM4R.jpg) no-repeat 0/cover;
+}
+
+.gallery-img9 {
+    background: url(https://cdn.stocksnap.io/img-thumbs/960w/2HBERGYT3G.jpg) no-repeat 0/cover;
+}
+
+.gallery-img10 {
+    background: url(https://cdn.stocksnap.io/img-thumbs/960w/JVZSMMHS8J.jpg) no-repeat 0/cover;
+}
+
+section.gallery .layer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+
+section.gallery .gallery-img:hover .layer {
+    display: block;
+    background: rgba(68, 65, 65, 0.68);
+    margin-top: -18px;
 
     h3 {
-        display: block;
-        position: absolute;
-        transform: translate(330px, -249px);
         color: white;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 50px;
     }
 
     p {
-        position: absolute;
-        transform: translate(330px, -180px);
-        color: #fff;
-        padding-right: 50px;
+        text-align: center;
+        color: white;
         font-size: 16px;
-        letter-spacing: 1px;
-    }
-
-    .info {
-        transform: translate(330px, -82px);
-        text-align: justify;
-        font-weight: bold;
-        text-transform: capitalize;
     }
 }
 
-/* second gallery */
-
-.second-image {
+section.gallery .layer i {
+    padding-left: 20px;
+    color: #fff;
+    font-size: 20px;
     position: relative;
+}
 
-    img {
-        width: 550px;
-        height: 250px;
-        filter: brightness(50%);
-        transform: translate(-0.1%, -10%);
+@media(min-width: 768px) and (max-width: 991px) {
+
+    .gallery-img {
+        height: 30vh;
+        width: 100%;
     }
 
-    h3 {
-        position: absolute;
-        top: -20px;
-        color: #fff;
-        letter-spacing: 1px;
-        text-transform: capitalize;
-    }
+    section.gallery .gallery-img:hover .layer {
 
-    p {
-        position: absolute;
-        top: 55px;
-        color: #fff;
-    }
+        margin-top: -16px;
 
-    .more-info {
-        transform: translate(-4px, 60px);
-        text-align: justify;
-        font-weight: bold;
-        text-transform: capitalize;
+        h3 {
+            color: white;
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 12px;
+        }
     }
 }
 
-.small-box {
-    width: 300px;
-    height: 250px;
-    transform: translate(19px, -28px);
-    background-color: rgb(115, 133, 96);
-    color: rgb(255, 255, 255);
-    text-align: justify;
-    letter-spacing: 1px;
+@media(max-width: 767px) {
 
-    h3 {
-        transform: translate(3px, 7px);
+    .gallery {
+        display: none;
     }
 
-}
-
-.small-box-second {
-    width: 279px;
-    height: 250px;
-    margin-top: -301px;
-    margin-left: 314px;
-    background-color: rgb(122, 94, 167);
-    color: rgb(255, 255, 255);
-    text-align: justify;
-    letter-spacing: 1px;
-}
-
-.last-box {
-    width: 500px;
-    height: 250px;
-    margin-top: -301px;
-    margin-left: 497px;
-    background-color: rgb(145, 100, 131);
-    color: rgb(255, 255, 255);
-    text-align: justify;
-    letter-spacing: 1px;
-
-    .last-info {
-        margin-top: 65px;
-        text-align: justify;
-        font-weight: bold;
-        text-transform: capitalize;
+    section.gallery .gallery-img:hover .layer {
+        display: none;
     }
 }
-
-
-/* icons */
-i {
-    padding-left: 15px;
-}
-

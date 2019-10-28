@@ -1,3 +1,4 @@
+
 /* class footer */
 .footer {
     background-color: #1F2928;
@@ -71,11 +72,13 @@
 /* content */
 .list-footer {
     text-transform: capitalize;
-    text-align: center;
-    margin-right: 60px;
+    text-align: justify;
+    margin-right: 300px;
+    padding-top: 50px;
 
     p {
-        font-size: 16px;
+        font-size: 18px;
+        margin-left: 38px;
     }
 
     ul {
@@ -85,9 +88,9 @@
 
     li {
         list-style-type: none;
-        padding-right: 45px;
+        padding-right: 25px;
         padding-top: 10px;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -128,8 +131,8 @@
 
     .second-container {
         // display: block;
-        width: 50%;
-        margin-left: 120px;
+        width: 80%;
+        margin-left: 20px;
         margin-top: 70px;
 
         span {
@@ -174,7 +177,6 @@
     .second-container {
         display: block;
         width: 100%;
-        margin-bottom: -70px;
         text-align: justify;
 
         input {
@@ -196,23 +198,28 @@
             margin-left: 20px;
         }
     }
+
     .list-footer {
-        text-align: center;
-        padding-top: -100px;
-        width: 60%;    
+        text-align: justify;
+        padding-top: -40px;
+        width: 100%;
+
         p {
-            font-size: 14px;
+            font-size: 16px;
             text-align: justify;
-            margin-left: 10px;
+            margin-left: 35px;
         }
+
         ul {
-            width: 100%;
-            margin-left: -15px;
+            list-style-type: none;
+            margin-left: 12px;
             padding-top: 5px;
         }
+
         li {
-            list-style-type: none;
+
             text-align: justify;
+            margin-left: -15px;
         }
     }
 }

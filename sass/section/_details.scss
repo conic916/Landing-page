@@ -31,3 +31,16 @@
         text-transform: capitalize;
     }
 }
+
+@media(max-width: 767px) {
+    .description {
+        width: 100%;
+        text-align: center;
+        height: auto;
+
+        .desc>p {
+            padding-right: 50px;
+            padding-left: 10px;
+        }
+    }
+}
