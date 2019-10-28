@@ -1,7 +1,7 @@
 /* jumbotron */
 .jumbotron {
     background-image: url(https://images.unsplash.com/photo-1470259078422-826894b933aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80);
-    width: 100%;
+    max-width: 100%;
     height: 90vh;
     background-size: cover;
     background-position: center;
@@ -55,7 +55,7 @@
     .desc {
         text-shadow: 3px 3px 5px rgb(0, 0, 0);
         color: #ffff;
-        transform: translate(51%, 5%);
+        transform: translate(50%, 5%);
         font-size: 28px;
         text-transform: capitalize;
         z-index: 99;
@@ -68,6 +68,86 @@
             text-shadow: 4px 4px 5px rgb(7, 7, 7);
             font-size: 16px;
             letter-spacing: 2px;
+        }
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+    /* jumbotron */
+    .jumbotron {
+        height: 60vh;
+
+        .logo-circle {
+            position: absolute;
+            top: 30px;
+            left: 220px;
+        }
+
+        .text-rotated>p {
+            margin-top: -40px;
+        }
+
+        .desc {
+            text-shadow: 3px 3px 5px rgb(0, 0, 0);
+            color: #ffff;
+            transform: translate(30%, -45%);
+            font-size: 28px;
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+
+    /* jumbotron */
+    .jumbotron {
+        height: 50vh;
+
+        .logo-circle {
+            position: absolute;
+            top: 10px;
+            left: 170px;
+        }
+
+        .text-rotated>p {
+            margin-top: -80px;
+        }
+
+        .desc {
+            transform: translate(26%, -85%);
+            font-size: 18px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .jumbotron {
+        background-image: url(https://images.unsplash.com/photo-1470259078422-826894b933aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80);
+        max-width: 100%;
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        padding-top: 20vh;
+        position: relative;
+
+        .logo-circle {
+            display: none;
+        }
+
+        .text-rotated>p {
+            font-size: 16px;
+        }
+
+        .desc {
+            transform: translate(17%, 5%);
+            font-size: 14px;
+            width: 280px;
+
+            p {
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
         }
     }
 }
