@@ -17,7 +17,7 @@
     border-radius: 1%;
     width: 350px;
     height: 350px;
-    margin-top: 40px;
+    margin-top: 42px;
 
     h4 {
         color: rgb(29, 28, 28);
@@ -27,9 +27,8 @@
     }
 
     p {
-        padding-top: 15px;
         text-transform: underline;
-        font-size: 14px;
+        font-size: 16px;
         text-align: justify;
         letter-spacing: 1px;
     }
@@ -56,6 +55,8 @@
 
         i {
             font-size: 22px;
+            padding-left: 10px;
+            margin-right: 10px;
         }
     }
 }
@@ -66,10 +67,13 @@
     background: white;
     width: 350px;
     height: 350px;
-    margin-top: 40px;
-    margin-left: 50px;
+    margin-top: 38px;
+    margin-left: 60px;
+    padding-left: 10px;
+    padding-right: 15px;
 
     h4 {
+        padding-top: 5px;
         color: rgb(29, 28, 28);
         font-size: 18px;
         letter-spacing: 1px;
@@ -77,9 +81,9 @@
     }
 
     p {
-        padding-top: 15px;
+        padding-right: 10px;
         text-transform: underline;
-        font-size: 14px;
+        font-size: 16px;
         text-align: justify;
         letter-spacing: 1px;
     }
@@ -105,30 +109,43 @@
 
         i {
             font-size: 22px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 }
 
 @media(min-width: 992px) and (max-width: 1199px) {
     .legacy {
-        width: 250px;
-        margin-left: 5px;
+        width: 280px;
+        margin-left: -20px;
+
+        button {
+            margin-top: 18px;
+        }
     }
 
     .most-popular {
-        width: 250px;
-        margin-left: 5px;
+        width: 280px;
+        margin-left: 20px;
     }
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
+    .shopping {
+        height: 450px;
+    }
     .legacy {
-        width: 200px;
-        margin-left: 2px;
+        width: 280px;
+        margin-left: -20px;
+
+        button {
+            margin-top: 18px;
+        }
     }
 
     .most-popular {
-        width: 200px;
+        width: 280px;
         margin-left: 25px;
     }
 }
@@ -136,24 +153,28 @@
 @media(max-width: 767px) {
     .shopping {
         width: 100%;
-        height: 480px;
+        height: 500px;
         text-align: justify;
+        margin-bottom: -50px;
     }
 
     .legacy {
-        width: 100%;
+        width: 300px;
+        box-shadow: 1px 1px 15px 15px rgb(224, 223, 223);
+        background: white;
+        padding-left: 10px;
+        padding-top: 15px;
 
         p {
-            text-align: justify;
+            padding-right: 10px;
             font-size: 14px;
-            padding-right: 25px;
         }
 
         button {
-            width: 80px;
+            width: 90px;
             height: 35px;
             font-size: 8px;
-            margin-top: 5px;
+            margin-top: 20px;
 
             &:hover {
                 background: none;
@@ -170,33 +191,7 @@
     }
 
     .most-popular {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-
-        p {
-            text-align: justify;
-            font-size: 14px;
-            padding-right: 28px;
-        }
-
-        .button {
-            width: 80px;
-            height: 35px;
-            font-size: 8px;
-            margin-top: 5px;
-
-            &:hover {
-                background: none;
-            }
-        }
-
-        .icons {
-            padding-top: 15px;
-
-            i {
-                font-size: 18px;
-            }
-        }
+        display: none;
+        visibility: hidden;
     }
 }
