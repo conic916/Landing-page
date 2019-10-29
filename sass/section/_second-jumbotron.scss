@@ -10,7 +10,7 @@
     h2,
     h3 {
         text-shadow: 4px 4px 5px rgb(87, 87, 87);
-        color: #ffff;
+        color: $white;
         transform: translate(62%, 5%);
         font-size: 28px;
         text-transform: capitalize;
@@ -23,7 +23,7 @@
     }
 
     p {
-        color: #ffff;
+        color: $white;
         transform: translate(68%, 5%);
         text-transform: capitalize;
         z-index: 99;

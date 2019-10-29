@@ -11,7 +11,7 @@
         transform: translate(5px, 0);
         text-align: justify;
         text-transform: capitalize;
-        color: #222626;
+        color: $black;
         font-size: 18px;
         padding-top: 50px;
     }
@@ -20,20 +20,20 @@
         font-size: 14px;
         text-align: justify;
         padding-right: 22px;
-        color: rgb(185, 181, 181);
+        color: $grey-paragraph;
         text-transform: capitalize;
     }
 
     .desc>p {
         text-align: justify;
         padding-right: 80px;
-        color: rgb(185, 181, 181);
+        color: $grey-paragraph;
         text-transform: capitalize;
     }
 
     h4 {
         padding-bottom: 10px;
-        color: #c7c7c7;
+        color: $grey-paragraph;
         font-size: 16px;
         text-transform: capitalize;
     }
@@ -58,7 +58,7 @@
             transform: translate(5px, 0);
             text-align: justify;
             text-transform: capitalize;
-            color: #c7c7c7;
+            color: $grey-paragraph;
             font-size: 16px;
         }
 
@@ -66,7 +66,7 @@
             font-size: 12px;
             text-align: justify;
             padding-right: 25px;
-            color: rgb(185, 181, 181);
+            color: $grey-paragraph;
             text-transform: underline;
         }
     }

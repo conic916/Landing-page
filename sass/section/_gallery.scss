@@ -1,6 +1,6 @@
 /*galeria*/
 .gallery {
-    background: rgb(255, 213, 213);
+    background: $white;
 }
 
 .gallery-img {
@@ -74,7 +74,7 @@ section.gallery .gallery-img:hover .layer {
     margin-top: -18px;
 
     h3 {
-        color: white;
+        color: $white;
         font-size: 18px;
         text-align: center;
         padding-top: 50px;
@@ -82,14 +82,14 @@ section.gallery .gallery-img:hover .layer {
 
     p {
         text-align: center;
-        color: white;
+        color: $white;
         font-size: 16px;
     }
 }
 
 section.gallery .layer i {
     padding-left: 20px;
-    color: #fff;
+    color: $white;
     font-size: 20px;
     position: relative;
 }
@@ -106,7 +106,7 @@ section.gallery .layer i {
         margin-top: -16px;
 
         h3 {
-            color: white;
+            color: $white;
             font-size: 16px;
         }
 

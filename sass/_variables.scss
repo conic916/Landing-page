@@ -1,0 +1,19 @@
+// colors :
+$white: #ffffff;
+$black: #222626;
+$background-content:rgb(83, 151, 83);
+$grey-paragraph:rgb(185, 181, 181);
+$green-button: rgb(138, 189, 138);
+$violet-button: rgb(150, 84, 150);
+
+
+// mixins :    //  @include border-radius(10px);
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+  }
+
+
+  //@extend : 
