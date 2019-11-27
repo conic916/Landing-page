@@ -1,2 +1,2 @@
 # Landing-page
-https://conic916.github.io/Landing-page/.
+https://katarzyna-da-silva.github.io/Landing-page/
